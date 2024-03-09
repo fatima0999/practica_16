@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+h2{
+        font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    background-image: linear-gradient(transparent, transparent), linear-gradient(to right, red, blue); /* Colores del borde */
+    -webkit-background-clip: text, border-box; /* Hace que el texto utilice el fondo como máscara */
+    background-clip: text, border-box;
+    -webkit-text-fill-color: transparent; /* Hace que el texto sea transparente */
+    -webkit-text-stroke: 2px black; /* Tamaño y color del borde */
+    }
+   .container {
+        /*Estas propiedades establecen  la altura del video serán del 100% del tamaño del contenedor padre, lo que significa que el video ocupará todo el espacio disponible dentro del contenedor.*/
+        width: 1000px;
+        /*Estas propiedades establecen  la altura del video serán del 100% del tamaño del contenedor padre, lo que significa que el video ocupará todo el espacio disponible dentro del contenedor.*/
+        height: 30px;
+        display: flex;
+        justify-content: center; /* Centrado horizontal */
+        align-items: center; /* Centrado vertical */
+        height: 550px; /* Altura del viewport, puedes ajustarla según necesites */
+        background-position: center center;
+        background-color: rgba(0, 0, 0, 0.5);
+     
+        
+    }
+    video{
+        /*Esto establece la posición del elemento <video> de forma absoluta en relación con su primer elemento padre posicionado.*/
+        position: absolute;
+        /*Estas propiedades establecen que el ancho del video serán del 100% del tamaño del contenedor padre, lo que significa que el video ocupará todo el espacio disponible dentro del contenedor.*/
+        width: 100%;
+        /*Estas propiedades establecen  la altura del video serán del 100% del tamaño del contenedor padre, lo que significa que el video ocupará todo el espacio disponible dentro del contenedor.*/
+        height: 100%;
+        /* Esta propiedad especifica cómo el contenido del video debe ajustarse dentro de su contenedor. */
+        object-fit: cover;
+        /*Estas propiedades posicionan el video en la esquina superior izquierda del contenedor padre.*/
+        top: 0;
+        /*Estas propiedades posicionan el video en la esquina superior izquierda del contenedor padre.*/
+        left: 0;
+        /*Esta propiedad establece el índice z del video en -1. Un valor negativo indica que el video estará detrás de otros elementos en la pila de capas*/
+        z-index: -1;
+        animation: pulsate 5s ease-in-out infinite alternate;
+        filter: brightness(70%) saturate(100%) blur(5px);
+        }
+    
+        
+    .rectangulo1{
+        margin: 70px; /* Margen exterior de 20px */
+        border-radius: 30px; /* Bordes redondeados */
+        background-color: rgb(17, 18, 17);
+        /* Establece el ancho de todas las imágenes en 250 píxeles.*/
+        width: 300px;
+        /*Establece la altura de todas las imágenes*/
+        height: 300px;
+        /*El borde del rectángulo es de estilo sólido.*/
+        /*El rectángulo se muestra como un bloque.*/
+        float:right;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-color: yellow;
+        box-shadow: 5px 5px 5px rgba(225, 232, 227, 0.884);
+        
+    }
+
+    .circulo{
+            margin: 20px; /* Margen exterior de 20px */
+            border-radius: 80px; /* Bordes redondeados */
+            box-shadow: 5px 5px 5px rgba(72, 208, 111, 0.5); /* Sombra */
+            /* Establece el ancho de todas las imágenes en 250 píxeles.*/
+            width: 250px;
+            /*Establece la altura de todas las imágenes*/
+            height: 250px;
+            /*Establece el radio de las esquinas de todas las imágenes en 30 píxeles, lo que crea un efecto de borde redondeado.*/
+            border-radius: 50%;
+            
+            background-color: rgb(224, 224, 233);
+            /* Establece el estilo de borde de los elementos con la clase */
+            border-style: solid;
+            /* Agrega un margen de 10 píxeles en la parte inferior del elemento.*/
+            margin-bottom:0px;
+            display: block;
+            /*Al igual que el valor anterior, parece ser un valor de margen inusual sin una unidad de medida específica. Además, usar un valor negativo (-10cap) podría tener un efecto impredecible y no deseado.*/
+            margin-left: auto;
+            /*Establece el margen izquierdo y derecho del elemento en "auto", lo que hace que el elemento se centre horizontalmente dentro de su contenedor padre.*/
+            margin-right: auto;
+            animation: girar 10s linear infinite;
+        
+    }
+    .circulo2{
+        margin: 45px; /* Margen exterior de 20px */
+        border-radius: 60px; /* Bordes redondeados */
+        box-shadow: 5px 5px 5px rgba(235, 242, 237, 0.5); /* Sombra */
+        border-style: solid;
+        /*Estas propiedades establecen  la altura del video serán del 100% del tamaño del contenedor padre, lo que significa que el video ocupará todo el espacio disponible dentro del contenedor.*/
+        width: 150px;
+        height: 150px;
+        background-color: rgb(33, 22, 22);
+        border-radius:50%; /* Para hacer un círculo */
+        margin-left: auto;
+        /*Establece el margen izquierdo y derecho del elemento en "auto", lo que hace que el elemento se centre horizontalmente dentro de su contenedor padre.*/
+        margin-right: auto;
+        
+    }
+    .ciculo3{
+            margin: 60px; /* Margen exterior de 45px */
+            border-radius: 60px; /* Bordes redondeados */
+            box-shadow: 5px 5px 5px rgba(235, 242, 237, 0.5); /* Sombra */
+            border-style: solid;
+            /*Estas propiedades establecen  la altura del video serán del 100% del tamaño del contenedor padre, lo que significa que el video ocupará todo el espacio disponible dentro del contenedor.*/
+            width: 20px;
+            /*Estas propiedades establecen  la altura del video serán del 100% del tamaño del contenedor padre, lo que significa que el video ocupará todo el espacio disponible dentro del contenedor.*/
+            height: 20px;
+            background-color: rgb(236, 223, 223);
+            margin-left: auto;
+            /*Establece el margen izquierdo y derecho del elemento en "auto", lo que hace que el elemento se centre horizontalmente dentro de su contenedor padre.*/
+            margin-right: auto;
+    }
+        
+
+    .circulo4{
+        margin: -245px; /* Margen exterior */
+        border-radius: 800px; /* Bordes redondeados */
+        background-color: rgb(206, 101, 171);
+        box-shadow: 5px 5px 5px rgba(233, 236, 234, 0.5); /* Sombra */
+        /* Establece el ancho .*/
+        width: 40px;
+        /*Establece la altura*/
+        height: 40px;
+        float:right;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+        .rectangulo2{
+            margin:35px; /* Margen exterior de 20px */
+            border-radius: 70px; /* Bordes redondeados */
+            background-color: rgb(218, 119, 197);
+            /* Establece el ancho de todas las imágenes en 10 píxeles.*/
+            width: 10px;
+            /*Establece la altura de todas las imágenes*/
+            height: 90px;
+            /*El rectángulo se muestra como un bloque.*/
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            
+            float: left;
+            }
+        .rectangulo3{
+            margin:70px; /* Margen exterior de 20px */
+            border-radius: 100px; /* Bordes redondeados */
+            background-color: rgb(34, 6, 28);
+            /* Establece el ancho de todas las imágenes en 250 píxeles.*/
+            width: 20px;
+            /*Establece la altura de todas las imágenes*/
+            height: 30px;
+            /*El borde del rectángulo es de estilo sólido.*/
+            /*El rectángulo se muestra como un bloque.*/
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            /* Alineación a la izquierda */
+            float: left;
+        }
+    
+.rectan {
+    margin: 35px; /* Ajuste del margen exterior */
+    border-radius: 30px; /* Bordes redondeados */
+    /*Estas propiedades establecen  la altura del video serán del 100% del tamaño del contenedor padre, lo que significa que el video ocupará todo el espacio disponible dentro del contenedor.*/
+    width: 150px;
+    /*Estas propiedades establecen  la altura del video serán del 100% del tamaño del contenedor padre, lo que significa que el video ocupará todo el espacio disponible dentro del contenedor.*/
+    height: 200px;
+    background-color: rgb(242, 104, 132);
+    transform: rotate(-2deg);
+    float: left; /* Alineación a la izquierda */
+    animation: beat 1s infinite alternate;
+    border-color: rgb(51, 186, 143);
+    box-shadow: 5px 5px 5px rgba(94, 235, 134, 0.884)
+}
+
+.container2{
+    /*Estas propiedades establecen  la altura del video serán del 100% del tamaño del contenedor padre, lo que significa que el video ocupará todo el espacio disponible dentro del contenedor.*/
+        width: -30px;
+        /*Estas propiedades establecen  la altura del video serán del 100% del tamaño del contenedor padre, lo que significa que el video ocupará todo el espacio disponible dentro del contenedor.*/
+        height: -20px;
+        display: flex;
+        justify-content: center; /* Centrado horizontal */
+        align-items: center; /* Centrado vertical */
+        height: 550px; /* Altura del viewport, puedes ajustarla según necesites */
+        background-position: center ;
+      
+
+    }
+    .circulo5{
+    /*Estas propiedades establecen  la altura del video serán del 100% del tamaño del contenedor padre, lo que significa que el video ocupará todo el espacio disponible dentro del contenedor.*/
+    width: 100px;
+    /*Estas propiedades establecen  la altura del video serán del 100% del tamaño del contenedor padre, lo que significa que el video ocupará todo el espacio disponible dentro del contenedor.*/
+    height: 100px;
+    /* color de pararafo */
+    background-color: #a7b5ec;
+    /* Bordes redondeados */
+    border-radius: 50%;
+    /* posison */
+    position: absolute;
+    bottom: 40px;
+    left: 5%;
+    margin: 25px; /* Margen exterior de 20px */
+    border-radius: 800px; 
+    box-shadow: 5px 5px 5px rgba(19, 20, 20, 0.5); /* Sombra */
+    transform: rotate(-2deg);
+    }
+    .circulito{
+        margin: 25px; /* Margen exterior de 45px */
+        border-radius: 60px; /* Bordes redondeados */
+        box-shadow: 5px 5px 5px rgba(81, 46, 195, 0.5); /* Sombra */
+        border-style: solid;
+        /*Estas propiedades establecen  la altura del video serán del 100% del tamaño del contenedor padre, lo que significa que el video ocupará todo el espacio disponible dentro del contenedor.*/
+        width: 50px;
+        height: 50px;
+        background-color: rgb(236, 223, 223);
+        margin-left: auto;
+        /*Establece el margen izquierdo y derecho del elemento en "auto", lo que hace que el elemento se centre horizontalmente dentro de su contenedor padre.*/
+        margin-right: auto;
+        transform: rotate(-360deg);
+    }
+    .rectann{
+        margin: 3px; /* Ajuste del margen exterior */
+        border-radius: 30px; /* Bordes redondeados */
+        /*Estas propiedades establecen  la altura del video serán del 100% del tamaño del contenedor padre, lo que significa que el video ocupará todo el espacio disponible dentro del contenedor.*/
+        width: 150px;
+        /*Estas propiedades establecen  la altura del video serán del 100% del tamaño del contenedor padre, lo que significa que el video ocupará todo el espacio disponible dentro del contenedor.*/
+        height: 200px;
+        background-color: rgb(242, 104, 132);
+        transform: rotate(-2deg);
+        float: left; /* Alineación a la izquierda */
+        animation: beat 1s infinite alternate;
+        border-color: chartreuse;
+        box-shadow: 5px 5px 5px rgba(112, 225, 144, 0.884)
+    }
+    
+.circulo6{
+    /*Estas propiedades establecen  la altura del video serán del 100% del tamaño del contenedor padre, lo que significa que el video ocupará todo el espacio disponible dentro del contenedor.*/
+    width: 100px;
+    /*Estas propiedades establecen  la altura del video serán del 100% del tamaño del contenedor padre, lo que significa que el video ocupará todo el espacio disponible dentro del contenedor.*/
+    height: 100px;
+    background-color: #a7b5ec;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 40px;
+    left: 5%;
+    margin: 25px; /* Margen exterior de 20px */
+    border-radius: 800px; 
+    box-shadow: 5px 5px 5px rgba(19, 20, 20, 0.5); /* Sombra */
+    transform: rotate(-2deg);
+}
+.circulin{
+    margin: 25px; /* Margen exterior de 45px */
+    border-radius: 60px; /* Bordes redondeados */
+    box-shadow: 5px 5px 5px rgba(81, 46, 195, 0.5); /* Sombra */
+    border-style: solid;
+    /*Estas propiedades establecen  la altura del video serán del 100% del tamaño del contenedor padre, lo que significa que el video ocupará todo el espacio disponible dentro del contenedor.*/
+    width: 50px;
+    /*Estas propiedades establecen  la altura del video serán del 100% del tamaño del contenedor padre, lo que significa que el video ocupará todo el espacio disponible dentro del contenedor.*/
+    height: 50px;
+    background-color: rgb(236, 223, 223);
+    margin-left: auto;
+    /*Establece el margen izquierdo y derecho del elemento en "auto", lo que hace que el elemento se centre horizontalmente dentro de su contenedor padre.*/
+    margin-right: auto;
+    transform: rotate(-360deg);
+}
+
+
+@keyframes girar{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes beat {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+@keyframes pulsate {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
